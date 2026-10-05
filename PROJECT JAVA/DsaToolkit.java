@@ -10,7 +10,7 @@ public class DsaToolkit {
               Node(int d){
                 data=d;
             } 
-        }
+        } 
         private Node head;
         private int size=0;
         public void addFirst(int x){
@@ -45,7 +45,7 @@ public class DsaToolkit {
              Node cur=head;
               while(cur!=null){
                  Node nxt=cur.next;
-                  cur.next=prev;
+                  cur.next=prev; 
                    prev=cur; 
                    cur=nxt;
                 } 
@@ -208,11 +208,7 @@ public class DsaToolkit {
              }
         void bfs(int start){
     boolean[] vis = new boolean[n];
-<<<<<<< HEAD
-    Queue<Integer> q = new java.util.LinkedList<>(); // fixed line 
-=======
-    Queue<Integer> q = new java.util.LinkedList<>(); // fixed line
->>>>>>> 34a021320166f09346425dc6e34f8cdc3e9d30b9
+   Queue<Integer> q = new java.util.LinkedList<>(); // fixed line 
     q.add(start);
     vis[start] = true;
     System.out.print("BFS: ");
@@ -313,8 +309,8 @@ public class DsaToolkit {
         }
         static void swap(int[] a,int i,int j){
              int t=a[i];
-              a[i]=a[j];
-               a[j]=t; 
+                 a[i]=a[j];
+                 a[j]=t; 
         }
     }
 
@@ -387,13 +383,13 @@ public class DsaToolkit {
           int[] vals={50,30,70,20,40,60,80}; 
           for(int v:vals) 
             t.insert(v); 
-        System.out.print("Inorder: "); 
-        t.inorder();
-        System.out.println("Search 60: " + t.search(60)); 
-        System.out.println("Delete 70");
-        t.delete(70);
-        System.out.print("Inorder after delete: "); 
-        t.inorder(); 
+         System.out.print("Inorder: "); 
+         t.inorder();
+         System.out.println("Search 60: " + t.search(60)); 
+         System.out.println("Delete 70");
+         t.delete(70);
+         System.out.print("Inorder after delete: "); 
+         t.inorder(); 
     }
 
     static void graphDemo(){ 
