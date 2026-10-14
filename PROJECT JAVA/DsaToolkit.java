@@ -403,4 +403,22 @@ public class DsaToolkit {
          g.dfs(0);
     }
 
+        static void sortingDemo(){
+         int[] a = {5,2,9,1,5,6}; 
+         System.out.println("Original: "+Arrays.toString(a));
+          int[] b=a.clone();
+           Sorts.bubble(b);
+            System.out.println("Bubble: "+Arrays.toString(b));
+             b=a.clone();
+              Sorts.insertion(b);
+               System.out.println("Insertion: "+Arrays.toString(b)); 
+                b=a.clone();
+                 Sorts.mergeSort(b); 
+                  System.out.println("Merge: "+Arrays.toString(b));
+                   b=a.clone(); 
+                    Sorts.quickSort(b); 
+                     System.out.println("Quick: "+Arrays.toString(b)); 
+    }
+}
+
 
